@@ -1,0 +1,12 @@
+(jbuild_version 1)
+
+
+(library
+ ((name seqbuf)
+  (public_name seqbuf)
+  (libraries (bigarray))
+  (wrapped false)
+  (modules (seqbuf))))
+
+;(executable
+; ((name main)))

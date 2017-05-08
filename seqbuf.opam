@@ -1,0 +1,13 @@
+opam-version: "1.2"
+maintainer: "stephen.dolan@cl.cam.ac.uk"
+authors: ["Stephen Dolan"]
+homepage: "https://github.com/stedolan/seqbuf"
+bug-reports: "https://github.com/stedolan/seqbuf/issues"
+dev-repo: "https://github.com/stedolan/seqbuf.git"
+license: "MIT"
+build:
+[[ "jbuilder" "build" "--only-packages" name "--root" "." "-j" jobs ]]
+depends: [
+  "ocamlfind"
+  "jbuilder" {build}
+]
