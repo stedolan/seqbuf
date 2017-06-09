@@ -137,6 +137,7 @@ val index_char : buffer -> char -> int option
     the buffer, or [None] if it is not present. This function consumes no
     bytes and cannot underflow *)
   
+(*
 val move : builder -> buffer -> int -> unit
 (** [move a b n] consumes [n] bytes from [b] and appends them to
     [a]. It may raise either [Underflow] or [Overflow], if [b] is too
@@ -145,7 +146,7 @@ val move : builder -> buffer -> int -> unit
 
 val move_new : buffer -> builder
 (** [move_new b] returns a new builder which already contains the remaining contents of b *)
-
+*)
 
 (** {2 Raw Bigstring access} *)
 
